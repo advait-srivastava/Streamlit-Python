@@ -1,0 +1,22 @@
+import streamlit as st #install streamlit library !pip install streamlit
+
+# Title
+st.title("First Streamlit App")
+
+# Text
+st.write("Welcome to your Streamlit app!")
+
+# Input
+name = st.text_input("Enter your name:")
+
+# Button
+if st.button("Greet Me"):
+    st.success(f"Hello, {name}!")
+
+# Slider
+age = st.slider("Select your age:", 0, 100, 25)
+st.write(f"You're {age} years old.")
+"""command to run the code-
+streamlit run "code name".py
+To terminate- CTRL+C
+"""
